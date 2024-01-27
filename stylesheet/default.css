@@ -1,0 +1,158 @@
+/* default.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Stile für die Hauptnavigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #455157;
+    padding: 10px;
+    margin: 10px; /* Minimaler Abstand zum Rand */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center; /* Zentrieren von Text und Buttons */
+}
+
+.nav-buttons button {
+    background-color: #967070;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-buttons button:not(:first-child) {
+    margin-left: 10px;
+}
+
+.nav-buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Stile für die Nebennavigation (Sidebar) */
+.sidebar {
+    background-color: #455157;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px; /* Breite der Sidebar anpassen */
+    position: fixed;
+    left: 10px;
+    top: 110px; /* Abstand nach oben */
+    bottom: 100px; /* Abstand nach unten */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.sidebar img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Stile für den Hauptinhalt */
+.main-content {
+    margin-left: 80px; /* Breite der Sidebar plus Abstand zum linken Rand */
+    margin-top: 50px; /* Abstand nach oben */
+    padding: 20px;
+}
+
+/* Stile für den Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#zentrierterBlock {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 50px auto; /* Zentrieren des Blocks und Abstand nach oben und unten */
+    max-width: 800px; /* Maximale Breite des zentrierten Blocks */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profil-block {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.standort-button {
+    background-color: #967070;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.standort-button:hover {
+    background-color: #45a049;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Hintergrundfarbe mit Transparenz */
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.close-btn {
+    color: #0f0f0f;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
